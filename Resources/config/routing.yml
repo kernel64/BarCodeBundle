@@ -1,0 +1,3 @@
+mabs_bar_code_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: MabsBarCodeBundle:Default:index }
