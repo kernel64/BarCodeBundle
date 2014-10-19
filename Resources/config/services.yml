@@ -1,4 +1,13 @@
+parameters:
+    mabs_bar_code.service.class: Mabs\BarCodeBundle\Service\BarCodeService
+    mabs_bar_code_parameters:
+        default:
+            height: 20
+            width:  100
+            color:  "#000"
+        types: ~
+
 services:
-#    mabs_bar_code.example:
-#        class: Mabs\BarCodeBundle\Example
-#        arguments: [@service_id, "plain_value", %parameter%]
+    mabs_bar_code.service:
+        class: %mabs_bar_code.service.class%
+        arguments: [%mabs_bar_code_parameters%]
