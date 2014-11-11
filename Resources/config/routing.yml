@@ -1,3 +1,3 @@
-mabs_bar_code_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: MabsBarCodeBundle:Default:index }
+mabs_bar_code_generate_png:
+    path:     /generatePng/{type}.png
+    defaults: { _controller: MabsBarCodeBundle:Png:generate }

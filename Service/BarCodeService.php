@@ -22,7 +22,7 @@ class BarCodeService
         $this->params = $configData;
     }
 
-    public function getSrcPngBarCode($str, $type, $params = array())
+    public function getPngBarCode($str, $type, $params = array())
     {
         if (!$str) {
             $str = $this->str;
@@ -40,11 +40,7 @@ class BarCodeService
 
         $data = $this->barCode->getBarcodePngData($width, $height, array(hexdec($color[0]),hexdec($color[1]),hexdec($color[2])));
 
-        $file = tempnam ("c:/" , "bar-code_" );
-
-        file_put_contents($file, $data);
-
-        return $file;
+        return $data;
     }
 
     protected function buildBarCode($str, $type = null)
