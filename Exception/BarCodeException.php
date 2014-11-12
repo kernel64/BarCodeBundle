@@ -10,5 +10,4 @@ namespace Mabs\BarCodeBundle\Exception;
 
 class BarCodeException extends \Exception
 {
-
-} 
+}

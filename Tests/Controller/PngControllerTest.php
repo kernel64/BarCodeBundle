@@ -1,4 +1,9 @@
 <?php
+/**
+ * @author Mohamed Aymen Ben Slimane <med.aymen3@gmail.com>
+ * Date: 11/11/2014
+ *
+ */
 
 namespace Mabs\BarCodeBundle\Tests\Controller;
 
